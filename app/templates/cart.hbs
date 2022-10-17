@@ -1,0 +1,29 @@
+{{page-title "Cart"}}
+<main class="container mt-5">
+<h1>Shopping cart</h1>
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <b><LinkTo @route="index" class="text-decoration-none">Home</LinkTo></b>
+  </li>
+
+  <li class="breadcrumb-item"> Shopping cart </li>
+</ol>
+<section class="w-50 ml-auto text-right mb-5">
+  <div class="row">
+    <span class="col">SubTotal</span>
+    <span class="col">{{this.subTotal}}</span>
+  </div>
+  <div class="row">
+    <span class="col">Tax</span>
+    <span class="col">{{this.tax}}</span>
+  </div>
+  <div class="row">
+    <span class="col">Total</span>
+    <span class="col">{{this.total}}</span>
+  </div>
+</section>
+
+<button type="button" class="btn btn-success float-right">Check Out</button>
+
+</main>
+{{outlet}}
